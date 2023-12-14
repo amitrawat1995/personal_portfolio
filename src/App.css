@@ -317,9 +317,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .myImg{
-  border: 1px solid;
-  padding:10px;
  
+  border-radius: 8%;
+
 }
 
 

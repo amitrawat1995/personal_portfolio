@@ -3,7 +3,7 @@ import { useState,useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap"
 import { ArrowRightCircle } from "react-bootstrap-icons"
 import headerImg from"../assets/img/header-img.svg";
-import amit123 from "../assets/img/amit123.png"
+import amit12345 from "../assets/img/amit12345.png"
 
 
 export const Banner = () => {
@@ -52,7 +52,7 @@ export const Banner = () => {
       <Container>
         <Row className="align-items-center">
           <Col xs={6} md={4} xl={3}>
-            <img className="myImg" src={amit123} alt="profile img"/>
+            <img className="myImg" src={amit12345} alt="profile img"/>
           </Col>
           <Col xs={12} md={6} xl={7}>
             <span className="tagline">Welcome to my Portfolio</span>
