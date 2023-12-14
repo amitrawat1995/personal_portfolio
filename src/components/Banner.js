@@ -3,23 +3,18 @@ import { useState,useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap"
 import { ArrowRightCircle } from "react-bootstrap-icons"
 import headerImg from"../assets/img/header-img.svg";
-import amit12 from "../assets/img/amit12.png"
+import amit123 from "../assets/img/amit123.png"
+
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
-  const toRotate = ["Web Developer", "Web Designer", "Front-end Developer"];
+  const toRotate = ["Web Developer", "Front-end Developer"];
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const period = 2000;
 
-  useEffect(()=>{
-    let ticker = setInterval(() => {
-      tick();
-    },delta);
-
-    return () => {clearInterval(ticker)};
-  },[text])
+ 
 
   const tick = () => {
     let i = loopNum % toRotate.length;
@@ -44,12 +39,20 @@ export const Banner = () => {
     } 
   }
 
+  useEffect(()=>{
+    let ticker = setInterval(() => {
+      tick();
+    },delta);
+
+    return () => {clearInterval(ticker)};
+  },[text])
+
   return(
     <section className="banner" id="home">
       <Container>
         <Row className="align-items-center">
           <Col xs={6} md={4} xl={3}>
-            <img className="myImg" src={amit12} alt="profile img"/>
+            <img className="myImg" src={amit123} alt="profile img"/>
           </Col>
           <Col xs={12} md={6} xl={7}>
             <span className="tagline">Welcome to my Portfolio</span>
@@ -57,8 +60,8 @@ export const Banner = () => {
             <br/>            
                 <span className="wrap">{ text }</span>                
             </h1>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-            <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25}/></button>
+            <p>I am currently looking for an internship to enhance my web developing skills. As a Front-End Developer, my goal is to continually evolve and contribute to building visually compelling and technically sound web applications.</p>
+            <button ><a className="buttonLink" href="#connect">Let’s Connect </a><ArrowRightCircle size={25}/></button>
           </Col>
           <Col  xs={1} md={2} xl={2}>
             <img className="headerImg" src={headerImg} alt=""/>

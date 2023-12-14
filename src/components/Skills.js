@@ -1,10 +1,13 @@
 import { Container, Col, Row} from "react-bootstrap"
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import meter1 from "../assets/img/meter1.svg"
-import meter2 from "../assets/img/meter2.svg"
-import meter3 from "../assets/img/meter3.svg"
-import colorSharp from "../assets/img/color-sharp.png"
+import jsIcon from "../assets/img/jsIcon.png"
+import reactIcon from "../assets/img/reactIcon.jpg"
+import bootstrapIcon from "../assets/img/bootstrapIcon.png"
+
+import githubIcon from "../assets/img/githubIcon.jpeg"
+import htmlIcon from "../assets/img/htmlIcon.png"
+import cssIcon from "../assets/img/cssIcon.png"
 
 
 export const Skills = () => {
@@ -30,41 +33,44 @@ export const Skills = () => {
 
   return(
     <section className="skill" id="skills">
-      <Container>
+      <Container className="skillContainer">
         <Row>
           <Col>
             <div className="skill-bx">
               <h2>
                 Skills
               </h2>
-              <p>adadad da dasdasd d sad asdasds adasdasd  adasdadadadsasdaddadad.<br></br> Adadasd sadadasdad asdadasdad adasdadad dsadasdasd</p>
+              <p>As a Front-End Developer, I am proficient in HTML, CSS, JavaScript ,React. <br/>  Also have knowledge of Bootstrap, Tailwind Css , Git & Github.</p>
               <Carousel responsive={responsive} infinite={true} className="skill-slider">
                 <div className="item">
-                  <img src={meter1} alt="Image"/>
-                  <h5>HTML</h5>
-                </div>
-                <div className="item">
-                  <img src={meter2} alt="Image"/>
-                  <h5>CSS</h5>
-                </div>
-                <div className="item">
-                  <img src={meter3} alt="Image"/>
-                  <h5>Bootstrap</h5>
-                </div>
-                <div className="item">
-                  <img src={meter1} alt="Image"/>
+                  <img src={jsIcon} alt=""/>
                   <h5>JavaScript</h5>
                 </div>
                 <div className="item">
-                  <img src={meter1} alt="Image"/>
-                  <h5>React</h5>
+                  <img src={reactIcon} alt=""/>
+                  <h5>ReactJs</h5>
+                </div>
+                <div className="item">
+                  <img src={bootstrapIcon} alt=""/>
+                  <h5>Bootstrap</h5>
+                </div>
+                <div className="item">
+                  <img src={githubIcon} alt=""/>
+                  <h5>Git & Github</h5>
+                </div>
+                <div className="item">
+                  <img src={htmlIcon} alt=""/>
+                  <h5>HTML </h5>
+                </div>
+                <div className="item">
+                  <img src={cssIcon} alt=""/>
+                  <h5>CSS </h5>
                 </div>
               </Carousel>
             </div>
           </Col>
         </Row>
       </Container>
-      <img className="background-image-left" src={colorSharp} />
     </section>
   )    
 }
