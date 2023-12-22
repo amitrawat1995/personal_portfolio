@@ -15,6 +15,7 @@ import dicegame from "../assets/img/dicegame.png"
 import contactuss from "../assets/img/contactuss.png"
 import darkmode from "../assets/img/darkmode.png"
 import router from "../assets/img/router.png"
+import calculatorCover from "../assets/img/calculatorCover.png"
 
 export const Projects = () => {
 
@@ -76,7 +77,7 @@ export const Projects = () => {
       title: "Rock-Paper-Scissors",
       description: "Click here",
       imgUrl: rpsCover,
-      appLink:"https://rock-paper-scissorss12-lzn3i4zwp-amitrawat037-gmailcom.vercel.app",
+      appLink:"https://rock-paper-scissorss12.vercel.app/",
       githubLink:"https://github.com/amitrawat1995/rock-paper-scissorss12"
     },
     {
@@ -101,11 +102,11 @@ export const Projects = () => {
       githubLink:"https://github.com/amitrawat1995/multiplication_app"
     },
     {
-      title: "Business Startup",
+      title: "Calculator",
       description: "Click here",
-      imgUrl: projImg3,
-      appLink:"https://darkmode-ten.vercel.app/",
-      githubLink:""
+      imgUrl: calculatorCover,
+      appLink:"https://calculator-app-lac-ten.vercel.app/",
+      githubLink:"https://github.com/amitrawat1995/calculatorApp"
     }
   ]
 

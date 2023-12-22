@@ -478,6 +478,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   overflow: hidden;
   margin-bottom: 24px;
 }
+
+
 .proj-imgbx::before {
   content: "";
   background: linear-gradient(90.21deg, #8faa36 -5.91%, #90bd2f 111.58%);
@@ -720,7 +722,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .certContainer {
   margin:50px;
-  background: rgba(255, 255, 255, 0.1);
+  background:linear-gradient(90.21deg, #1e181c -5.91%, #4A2FBD 111.58%);
   
   border-radius: 30px;
   height:550px;

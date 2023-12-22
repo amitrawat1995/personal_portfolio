@@ -7,23 +7,23 @@ import { Container,Row, Col } from 'react-bootstrap';
 export const Certificates = () => {
   return (
     <section className='certSection' id= "certificate">
-    <Container className='certContainer' >
-      <Row className='certRow'>
-      <div className='certificateTitle'>Cretificates</div>
-        <Col xl= {5}  md={4} xs={6}>
-          
-         <img  src={certificate1} alt=''/>
-        </Col>
-        <Col xl= {4} md={4} xs={6}>
-          
-          <img  src={certificate2} alt=''/>
-         </Col>
-         <Col xl= {3} md={4} xs={6}>
-          
-          <img  src={certificate3} alt=''/>
-         </Col>
-      </Row>
-    </Container>
+      <Container className='certContainer' >
+        <Row className='certRow'>
+        <div className='certificateTitle'>Cretificates</div>
+          <Col xl= {5}  md={4} xs={6}>
+            
+          <img  src={certificate1} alt=''/>
+          </Col>
+          <Col xl= {4} md={4} xs={6}>
+            
+            <img  src={certificate2} alt=''/>
+          </Col>
+          <Col xl= {3} md={4} xs={6}>
+            
+            <img  src={certificate3} alt=''/>
+          </Col>
+        </Row>
+      </Container>
     </section>
   );
 }

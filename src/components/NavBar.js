@@ -60,7 +60,7 @@ export const NavBar = () => {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="https://www.linkedin.com/in/amit-rawat-42b3a7260/"><img src={navIcon1} alt=""/></a>
+                <a href="https://www.linkedin.com/in/amit-rawat-42b3a7260/" target="_blank"><img src={navIcon1} alt=""/></a>
               </div>
               <a href="#connect" className="anchorConnect"><button className="vvd" >Let's connect</button></a>
             </span>
