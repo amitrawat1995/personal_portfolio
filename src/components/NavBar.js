@@ -33,7 +33,7 @@ export const NavBar = () => {
     <Navbar expand="lg" className={scrolled ? "scrolled": ""}>
       <Container>
         <Navbar.Brand href="#home">
-            <img className="animate__animated animate__zoomInUp" src={amitlogo} alt="Logo"/>
+            <img className="animate__animated animate__zoomInUp topLogo" src={amitlogo} alt="Logo"/>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" >
           <span className="navbar-toggler-icon"></span>  

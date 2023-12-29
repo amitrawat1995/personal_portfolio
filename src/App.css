@@ -80,6 +80,32 @@ input:focus, textarea:focus, select:focus {
 	}
 }
 
+
+@media(max-width:600px) {
+  .topLogo{
+    width: 95px;
+  }
+
+  .headerImg{
+    width:140px
+  }
+
+ .certSection{
+  height: 950px;
+ }
+
+ .certRow{
+  background-color: rgb(41, 38, 92);
+  padding:20px ;
+  padding-bottom: 35px;
+  border-radius: 30px;
+ }
+
+
+
+
+}
+
 p.success {
 	color: green;
 }
@@ -256,12 +282,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .banner {
   margin-top: 0;
-  padding: 260px 0 100px 0;
+  padding: 160px 0 100px 0;
   background: linear-gradient(90.21deg, #324361 -5.91%, #4A2FBD 111.58%);
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .banner .tagline {
   font-weight: 700;
   letter-spacing: 0.8px;
